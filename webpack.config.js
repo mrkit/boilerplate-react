@@ -15,7 +15,7 @@ const config = {
     rules: [{
       test: /\.jsx?$/,
       exclude: /node_modules/,
-      loader: 'bable-loader',
+      loader: 'babel-loader',
       options: {
         presets: [['env', { modules: false }], 'react', 'stage-2']
       }

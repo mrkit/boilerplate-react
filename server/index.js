@@ -18,3 +18,5 @@ server.use((err, req, res, next) => {
   if(err) console.log(`Catch-All Error Message: ${err.message}`);
 });
 
+const port = process.env.PORT || 3000;
+server.listen(port, console.log(`listening on port ${port}`));
